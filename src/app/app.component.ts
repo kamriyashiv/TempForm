@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CrudApp';
+  data:{}={
+    name:'',
+    email:'',
+    mobile:'',
+    date:''
+  };
+  onSubmit(val:any){
+    this.data = val;
+    console.log(this.data);
+  }
 }
